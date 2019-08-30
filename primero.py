@@ -3,7 +3,7 @@
 """
 Created on Fri Aug 23 10:48:17 2019
 
-@author: alumnos
+@author: axel toledo
 """
 import numpy as np
 import matplotlib.pyplot as plt
@@ -163,7 +163,7 @@ cada corrida ya que lo supusimos estacionario.
 # 4) Terminos del balance de la ecuacion de stommel adimencionados, organizados
 # por cada corrida
 
-D_Dx_psi=(np.diff(psiF1[1:99,0:199],1,1),np.diff(psiF2[1:99,0:199],1,1),np.diff(psiF3[1:99,0:199],1,1))
+D_Dx_psi=(np.diff(psiF1[1:99,0:199]/(0.1),1,1),np.diff(psiF2[1:99,0:199]/(0.1),1,1),np.diff(psiF3[1:99,0:199]/(0.1),1,1))
 rotor_viento= QG_curlw1[1:99,0:198]#Los limites los puse asi para eliminar los 0
 vort_rel=(vortF1[1:99,1:199],vortF2[1:99,1:199],vortF3[1:99,1:199])
 # Calculo del balance para verificar la validez del mmismo 
