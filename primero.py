@@ -178,7 +178,7 @@ Terminos_1= D_Dx_psi[0] - rotor_viento + 0.29*vort_rel[0]
 plt.figure(6, figsize=(10,10))
 plt.title('Corte Zonal de los términos del balance de Stommel')
 plt.subplot()
-plt.plot(X1[0:198],D_Dx_psi[1][50,:],'g', label='diferencial función corriente')
+plt.plot(X1[0:198],D_Dx_psi[0][50,:],'g', label='diferencial función corriente')
 plt.plot(X1, QG_curlw1[50,0:200],'r', label='rotor del viento')
 plt.plot(X1, 0.29*vortF1[50,:],'b',label='vorticidad relativa')
 plt.ylabel('Valores de los terminos (adim)')
